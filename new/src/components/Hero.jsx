@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroBackground from "../assets/image02.jpg";
+import FallingPurpleDots from "./FallingPurpleDots";
 
 const Hero = () => {
   const handleScroll = (sectionId) => {
@@ -17,8 +18,9 @@ const Hero = () => {
       />
       <div className="absolute inset-0 -z-10 bg-gradient-to-r from-black via-black/80 to-black/25" />
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-transparent to-black/40" />
+      <FallingPurpleDots />
 
-      <div className="mx-auto flex w-full max-w-7xl items-center">
+      <div className="relative z-10 mx-auto flex w-full max-w-7xl items-center">
         <div className="flex max-w-4xl flex-col items-start text-left lg:pl-16 xl:pl-24">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
