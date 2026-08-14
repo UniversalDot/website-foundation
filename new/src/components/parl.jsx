@@ -45,7 +45,7 @@ const Parl = () => {
     <div className='relative'>
         <div ref={bg1} className='bg z-[-1]'></div>
             <div ref={img_container} className="img-container perspective flex items-center justify-center h-screen w-screen">
-                <img ref={img} className='image' src={bg} alt=''/>
+                <img ref={img} className='image intro-circle' src={bg} alt=''/>
                 <FallingPurpleDots />
 
                <div ref={text1} className='absolute z-10 flex flex-col items-center justify-center px-4'>

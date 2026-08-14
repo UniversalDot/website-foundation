@@ -142,7 +142,7 @@ const Pro = () => {
                 <p className="mt-2 text-sm leading-relaxed text-apple-muted line-clamp-3">
                   {project.description}
                 </p>
-                <span className="mt-4 inline-block text-sm font-medium text-apple-blue opacity-0 transition-opacity group-hover:opacity-100">
+                <span className="mt-4 inline-block text-sm font-medium text-apple-secondary opacity-0 transition-opacity group-hover:opacity-100">
                   Navigate for Project →
                 </span>
               </div>
