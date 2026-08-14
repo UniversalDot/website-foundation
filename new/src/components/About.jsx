@@ -1,4 +1,5 @@
 import aboutImg from "../assets/png-02.png";
+import aboutBackground from "../assets/image01.jpg";
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
 
@@ -15,8 +16,17 @@ const ABOUT_PARAGRAPHS = [
 
 const About = () => {
   return (
-    <section className="section-padding border-t border-apple-border">
-      <div className="section-container">
+    <section className="section-padding relative isolate overflow-hidden border-t border-apple-border">
+      <img
+        src={aboutBackground}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 -z-20 h-full w-full object-cover opacity-25"
+      />
+      <div className="absolute inset-0 -z-10 bg-black/70" />
+      <div className="absolute inset-x-0 bottom-0 -z-10 h-1/2 bg-gradient-to-b from-transparent to-black" />
+
+      <div className="section-container relative z-10">
         <SectionHeader
           eyebrow="About"
           title="Introducing..."

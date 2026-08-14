@@ -8,15 +8,11 @@ export default {
     extend: {
       fontFamily: {
         sans: [
-          '"Inter"',
+          '"Sora"',
           "sans-serif",
         ],
         apple: [
-          "-apple-system",
-          "BlinkMacSystemFont",
-          '"SF Pro Display"',
-          '"SF Pro Text"',
-          "system-ui",
+          '"Sora"',
           "sans-serif",
         ],
       },
