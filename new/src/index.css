@@ -16,7 +16,7 @@
   }
 
   ::selection {
-    @apply bg-apple-blue/30 text-white;
+    @apply bg-apple-secondary/30 text-white;
   }
 }
 
@@ -53,7 +53,7 @@
   }
 
   .apple-link {
-    @apply text-apple-blue transition-opacity hover:opacity-80;
+    @apply text-apple-secondary transition-opacity hover:opacity-80;
   }
 
   .btn-glass {
@@ -93,6 +93,10 @@
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     height: 100%;
+  }
+
+  .intro-circle {
+    filter: hue-rotate(88deg) saturate(1.35);
   }
 
   .perspective {

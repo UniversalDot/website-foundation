@@ -46,7 +46,7 @@ const Blog = () => {
                   <p className="text-xs font-medium uppercase tracking-widest text-apple-muted">
                     {post.tags || "Article"}
                   </p>
-                  <h3 className="mt-2 text-lg font-semibold text-apple-text transition-colors group-hover:text-apple-blue md:text-xl">
+                  <h3 className="mt-2 text-lg font-semibold text-apple-text transition-colors group-hover:text-apple-secondary md:text-xl">
                     {post.title}
                   </h3>
                   {post.excerpt && (
@@ -54,7 +54,7 @@ const Blog = () => {
                       {post.excerpt}
                     </p>
                   )}
-                  <span className="mt-4 inline-block text-sm font-medium text-apple-blue">
+                  <span className="mt-4 inline-block text-sm font-medium text-apple-secondary">
                     Read article →
                   </span>
                 </div>

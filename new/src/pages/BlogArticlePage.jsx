@@ -43,7 +43,7 @@ const BlogArticlePage = () => {
             )}
 
             <div className="mt-8 flex items-center gap-3 border-b border-gray-200 pb-8">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-apple-blue text-sm font-semibold text-white">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-apple-secondary text-sm font-semibold text-white">
                 SS
               </div>
               <div>

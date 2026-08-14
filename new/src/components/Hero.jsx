@@ -52,7 +52,7 @@ const Hero = () => {
             </button>
             <button
               onClick={() => handleScroll("about")}
-              className="text-sm font-medium text-apple-blue transition-opacity hover:opacity-70"
+              className="text-sm font-medium text-apple-secondary transition-opacity hover:opacity-70"
             >
               Learn more →
             </button>

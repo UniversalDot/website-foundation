@@ -41,7 +41,7 @@ const ExperienceCard = ({ title, role, period, summary, bullets }) => {
 
       <div className="relative z-10 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <h3 className="text-xl font-semibold text-apple-text md:text-2xl transition-colors group-hover:text-apple-blue">
+          <h3 className="text-xl font-semibold text-apple-text md:text-2xl transition-colors group-hover:text-apple-secondary">
             {title}
           </h3>
           {role && (
@@ -68,7 +68,7 @@ const ExperienceCard = ({ title, role, period, summary, bullets }) => {
                     key={bullet}
                     className="flex gap-3 text-base leading-relaxed text-apple-muted"
                   >
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-apple-blue" />
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-apple-secondary" />
                     {bullet}
                   </li>
                 ))}
