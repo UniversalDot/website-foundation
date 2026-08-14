@@ -7,6 +7,7 @@ import universalbitwallet from "../assets/universalbitwallet.png";
 import instantmemoir from "../assets/InstantMemoir.png";
 import itlinksme from "../assets/ItLinksme.png";
 import SectionHeader from "./SectionHeader";
+import projectsBackground from "../assets/image03.jpg";
 
 const PROJECTS = [
   {
@@ -96,8 +97,17 @@ const PROJECTS = [
 
 const Pro = () => {
   return (
-    <section className="section-padding border-t border-apple-border">
-      <div className="section-container">
+    <section className="section-padding relative isolate overflow-hidden border-t border-apple-border">
+      <img
+        src={projectsBackground}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 -z-20 h-full w-full object-cover object-center opacity-20"
+      />
+      <div className="absolute inset-0 -z-10 bg-black/80" />
+      <div className="absolute inset-x-0 bottom-0 -z-10 h-1/3 bg-gradient-to-b from-transparent to-black" />
+
+      <div className="section-container relative z-10">
         <SectionHeader
           eyebrow="Projects"
           title="Things We've built."

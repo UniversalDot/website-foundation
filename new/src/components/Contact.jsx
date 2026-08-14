@@ -3,6 +3,7 @@ import { CONTACT } from "../constants";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
+import contactBackground from "../assets/image05.jpg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -44,8 +45,16 @@ const Contact = () => {
   };
 
   return (
-    <section className="section-padding border-t border-apple-border">
-      <div className="section-container">
+    <section className="section-padding relative isolate overflow-hidden border-t border-apple-border">
+      <img
+        src={contactBackground}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 -z-20 h-full w-full object-cover object-bottom opacity-30"
+      />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/90 via-black/65 to-black/80" />
+
+      <div className="section-container relative z-10">
         <SectionHeader
           eyebrow="Contact"
           title="Let's connect."
