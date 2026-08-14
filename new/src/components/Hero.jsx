@@ -1,4 +1,3 @@
-import { HERO_CONTENT } from "../constants";
 import { motion } from "framer-motion";
 import heroDog from "../assets/image03.jpg";
 
@@ -17,7 +16,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.1 }}
-            className="max-w-4xl text-5xl font-thin tracking-tight font-apple text-apple-text md:text-7xl lg:text-8xl"
+            className="max-w-4xl font-apple text-5xl font-extrabold uppercase leading-none tracking-[0.025rem] text-apple-text md:text-7xl lg:text-8xl"
           >
             UNIVERSALDOT
           </motion.h1>
@@ -26,7 +25,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.25 }}
-            className="mt-6 max-w-4xl text-lg font-medium leading-relaxed text-apple-muted md:text-xl lg:text-2xl"
+            className="mt-6 max-w-4xl text-lg font-extralight leading-relaxed tracking-wider text-apple-muted md:text-xl lg:text-2xl"
           >
             Software Agency focused on AI, Software Development, and Web Design.
           </motion.p>
