@@ -1,3 +1,27 @@
+## Local Development
+
+To make changes, we recommend using http-server which is a is a simple, zero-configuration command-line http server. 
+
+Read more about [http-server](https://www.npmjs.com/package/http-server).
+
+## Deployment
+
+The site is deployed manually  in Hostinger. 
+
+To deploy, run npm run build and then copy the contents of /dist into hostinger 
+
+
+## Official Website
+https://universaldot.foundation
+
+
+## Maintainers
+
+[@Igor Stojanov](https://github.com/JosephKnecht-lab)
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
