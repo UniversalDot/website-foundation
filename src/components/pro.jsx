@@ -110,8 +110,8 @@ const Pro = () => {
       <div className="section-container relative z-10">
         <SectionHeader
           eyebrow="Projects"
-          title="Things We've built."
-          subtitle="From algorithms to full-stack apps — selected work across robotics, AI, and web development."
+          title="Work built to make an impact."
+          subtitle="Explore selected digital products that pair purposeful design with capable, dependable technology."
         />
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -143,7 +143,7 @@ const Pro = () => {
                   {project.description}
                 </p>
                 <span className="mt-4 inline-block text-sm font-medium text-apple-secondary opacity-0 transition-opacity group-hover:opacity-100">
-                  Navigate for Project →
+                  Visit project →
                 </span>
               </div>
             </motion.div>
@@ -161,7 +161,7 @@ const Pro = () => {
             onClick={() => window.open("https://github.com/UniversalDot", "_blank")}
             className="rounded-full border border-apple-border px-8 py-3 text-sm font-medium text-apple-text transition-all hover:border-white/20 hover:bg-apple-surface active:scale-[0.98]"
           >
-            View Projects on GitHub
+            Explore more on GitHub
           </button>
         </motion.div>
       </div>

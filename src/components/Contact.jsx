@@ -57,8 +57,8 @@ const Contact = () => {
       <div className="section-container relative z-10">
         <SectionHeader
           eyebrow="Contact"
-          title="Let's connect."
-          subtitle="Open to collaborations, research discussions, and interesting projects."
+          title="Let's build something valuable."
+          subtitle="Tell us what you are creating, where you are stuck, or what you want to improve. We would love to explore what is possible together."
         />
 
         <motion.div
@@ -83,7 +83,7 @@ const Contact = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Your Name"
+                  placeholder="Your name"
                   required
                   className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3.5 text-sm text-apple-text outline-none transition-all placeholder:text-apple-muted focus:border-white/30 focus:bg-white/10 focus:ring-4 focus:ring-white/5"
                 />
@@ -92,7 +92,7 @@ const Contact = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="Your Email"
+                  placeholder="Your email"
                   required
                   className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3.5 text-sm text-apple-text outline-none transition-all placeholder:text-apple-muted focus:border-white/30 focus:bg-white/10 focus:ring-4 focus:ring-white/5"
                 />
@@ -102,7 +102,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 rows="4"
-                placeholder="Your Message"
+                placeholder="Tell us about your project"
                 required
                 className="w-full resize-none rounded-xl border border-white/10 bg-white/5 px-4 py-3.5 text-sm text-apple-text outline-none transition-all placeholder:text-apple-muted focus:border-white/30 focus:bg-white/10 focus:ring-4 focus:ring-white/5"
               />
@@ -111,7 +111,7 @@ const Contact = () => {
                 disabled={status === 'loading'}
                 className="btn-glass w-full py-4 text-base tracking-wide disabled:opacity-70 disabled:cursor-not-allowed"
               >
-                {status === 'loading' ? 'Sending...' : 'Send Message'}
+                {status === 'loading' ? 'Sending...' : 'Start a conversation'}
               </button>
 
               {status === 'success' && (
