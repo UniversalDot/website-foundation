@@ -1,6 +1,13 @@
 import { useState } from "react";
 import { CONTACT } from "../constants";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaDocker,
+  FaGithub,
+  FaLinkedin,
+  FaMedium,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
 import contactBackground from "../assets/image05.jpg";
@@ -129,7 +136,7 @@ const Contact = () => {
           
           <p className="mt-8 text-base text-apple-muted font-medium">{CONTACT.phoneNo}</p>
 
-          <div className="mt-8 flex items-center gap-8">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4 sm:gap-6">
             <a
               href="https://www.linkedin.com/company/universaldot/"
               target="_blank"
@@ -147,6 +154,42 @@ const Contact = () => {
               aria-label="GitHub"
             >
               <FaGithub />
+            </a>
+            <a
+              href="https://www.youtube.com/@universaldotfoundation"
+              target="_blank"
+              rel="noreferrer"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-apple-border text-xl text-apple-muted transition-all hover:border-white/20 hover:text-apple-text"
+              aria-label="YouTube"
+            >
+              <FaYoutube />
+            </a>
+            <a
+              href="https://medium.com/@universaldot"
+              target="_blank"
+              rel="noreferrer"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-apple-border text-xl text-apple-muted transition-all hover:border-white/20 hover:text-apple-text"
+              aria-label="Medium"
+            >
+              <FaMedium />
+            </a>
+            <a
+              href="https://twitter.com/Universaldot_"
+              target="_blank"
+              rel="noreferrer"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-apple-border text-xl text-apple-muted transition-all hover:border-white/20 hover:text-apple-text"
+              aria-label="Twitter"
+            >
+              <FaTwitter />
+            </a>
+            <a
+              href="https://hub.docker.com/u/universaldot"
+              target="_blank"
+              rel="noreferrer"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-apple-border text-xl text-apple-muted transition-all hover:border-white/20 hover:text-apple-text"
+              aria-label="Docker Hub"
+            >
+              <FaDocker />
             </a>
           </div>
         </motion.div>
