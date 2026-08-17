@@ -5,13 +5,12 @@ import SectionHeader from "./SectionHeader";
 
 const ABOUT_PARAGRAPHS = [
   <>
-    We are <span className="font-medium text-apple-text">UNIVERSALDOT</span>, a software agency focused on AI, Software Development, and Web Design.
+    <span className="font-medium text-apple-text">UNIVERSALDOT</span> is a
+    software agency that brings AI, custom software development, and web design
+    together to create useful, memorable digital products.
   </>,
-  "UniversalDot is a software agency focused on turning ideas into reliable, intuitive, and scalable digital products. We work with businesses to design and develop modern software solutions that combine thoughtful user experiences with strong technical foundations.",
-  <>
-  From web and mobile applications to custom platforms and digital tools, UniversalDot supports clients throughout the entire development journey. Our approach is collaborative, practical, and driven by one goal: building technology that solves real problems and creates lasting value.
-  </>,
-  // "Beyond engineering, I enjoy visual design creating logos and branding. Off-screen, I spend my downtime drawing and singing.",
+  "We partner with ambitious businesses to shape promising ideas into reliable, intuitive, and scalable solutions. Every engagement balances a clear product strategy and considered user experience with the robust engineering needed to perform in the real world.",
+  "From AI-powered tools and custom platforms to responsive websites and applications, we support the complete journey—from discovery and design to development, launch, and refinement. Our process is collaborative, transparent, and focused on technology that solves meaningful problems and creates lasting value.",
 ];
 
 const About = () => {
@@ -29,8 +28,8 @@ const About = () => {
       <div className="section-container relative z-10">
         <SectionHeader
           eyebrow="About"
-          title="Introducing..."
-          subtitle="UNIVERSALDOT, Software development, and thoughtful design."
+          title="Ideas, engineered with purpose."
+          subtitle="Strategy, intelligent technology, and thoughtful design—working as one."
           align="left"
         />
 

@@ -35,7 +35,11 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.25 }}
             className="mt-6 max-w-4xl text-lg font-extralight leading-relaxed tracking-wider text-apple-muted md:text-xl lg:text-2xl"
           >
-            Software Agency focused on AI, Software Development, and Web Design.
+            We are a software agency building intelligent, reliable digital
+            products through AI, custom software development, and thoughtful
+            web design. From an early idea to a polished launch, we turn
+            complex challenges into intuitive experiences that are ready to
+            grow with your business.
           </motion.p>
 
           <motion.div
@@ -48,13 +52,13 @@ const Hero = () => {
               onClick={() => handleScroll("projects")}
               className="btn-glass"
             >
-              View Projects
+              Explore our work
             </button>
             <button
               onClick={() => handleScroll("about")}
               className="text-sm font-medium text-apple-secondary transition-opacity hover:opacity-70"
             >
-              Learn more →
+              Discover our approach →
             </button>
           </motion.div>
         </div>
