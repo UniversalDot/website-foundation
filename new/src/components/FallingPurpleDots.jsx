@@ -17,16 +17,18 @@ const FallingPurpleDots = () => {
     let animationFrame;
     let previousTime = performance.now();
 
-    const createDot = (width, height, startAbove = false) => {
-      const radius = 1 + Math.random() * 2.25;
+    const createDot = (width, height, startAtBack = false) => {
+      const depth = startAtBack ? Math.random() * 0.08 : Math.random();
 
       return {
-        x: Math.random() * width,
-        y: startAbove ? -radius * 2 : Math.random() * height,
-        radius,
-        speed: 18 + Math.random() * 34,
-        drift: -5 + Math.random() * 10,
-        opacity: 0.3 + Math.random() * 0.6,
+        worldX: (Math.random() - 0.5) * width,
+        worldY: (Math.random() - 0.65) * height,
+        depth,
+        radius: 1.25 + Math.random() * 1.75,
+        fallSpeed: 14 + Math.random() * 24,
+        approachSpeed: 0.09 + Math.random() * 0.1,
+        drift: -4 + Math.random() * 8,
+        opacity: 0.45 + Math.random() * 0.45,
       };
     };
 
@@ -34,11 +36,19 @@ const FallingPurpleDots = () => {
       context.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
 
       dots.forEach((dot) => {
+        // Project each dot from a shared vanishing point. As its depth increases,
+        // it grows, brightens, and spreads outward to appear to approach the viewer.
+        const scale = 0.18 + Math.pow(dot.depth, 1.65) * 1.9;
+        const x = canvas.clientWidth / 2 + dot.worldX * scale;
+        const y = canvas.clientHeight * 0.2 + dot.worldY * scale + dot.depth * canvas.clientHeight * 0.16;
+        const radius = dot.radius * scale;
+        const opacity = dot.opacity * (0.2 + dot.depth * 0.8);
+
         context.beginPath();
-        context.fillStyle = `rgba(168, 85, 247, ${dot.opacity})`;
+        context.fillStyle = `rgba(168, 85, 247, ${opacity})`;
         context.shadowColor = "rgba(192, 132, 252, 0.75)";
-        context.shadowBlur = dot.radius * 3;
-        context.arc(dot.x, dot.y, dot.radius, 0, Math.PI * 2);
+        context.shadowBlur = radius * (1 + dot.depth * 3);
+        context.arc(x, y, Math.max(0.35, radius), 0, Math.PI * 2);
         context.fill();
       });
     };
@@ -63,10 +73,11 @@ const FallingPurpleDots = () => {
       const height = canvas.clientHeight;
 
       dots.forEach((dot, index) => {
-        dot.y += dot.speed * elapsed;
-        dot.x += dot.drift * elapsed;
+        dot.depth += dot.approachSpeed * elapsed;
+        dot.worldY += dot.fallSpeed * elapsed;
+        dot.worldX += dot.drift * elapsed;
 
-        if (dot.y - dot.radius > height || dot.x < -10 || dot.x > width + 10) {
+        if (dot.depth > 1 || dot.worldY > height * 0.55) {
           dots[index] = createDot(width, height, true);
         }
       });
