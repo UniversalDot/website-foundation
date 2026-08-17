@@ -126,7 +126,7 @@ const Pro = () => {
               className="apple-card group cursor-pointer overflow-hidden relative"
             >
               {/* Subtle glow behind the card */}
-              <div className="absolute -top-24 -right-24 h-48 w-48 rounded-full bg-blue-500/20 blur-3xl pointer-events-none" />
+              <div className="absolute -top-24 -right-24 h-48 w-48 rounded-full bg-white/20 blur-3xl pointer-events-none" />
 
               <div className="overflow-hidden relative z-10">
                 <img
