@@ -23,7 +23,7 @@ export default {
           surface2: "#2d2d2f",
           text: "#f5f5f7",
           muted: "#86868b",
-          secondary: "#a855f7",
+          secondary: "#ffffff",
           border: "rgba(255,255,255,0.08)",
         },
       },

@@ -45,8 +45,8 @@ const FallingPurpleDots = () => {
         const opacity = dot.opacity * (0.2 + dot.depth * 0.8);
 
         context.beginPath();
-        context.fillStyle = `rgba(168, 85, 247, ${opacity})`;
-        context.shadowColor = "rgba(192, 132, 252, 0.75)";
+        context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
+        context.shadowColor = "rgba(255, 255, 255, 0.75)";
         context.shadowBlur = radius * (1 + dot.depth * 3);
         context.arc(x, y, Math.max(0.35, radius), 0, Math.PI * 2);
         context.fill();

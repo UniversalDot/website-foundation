@@ -70,8 +70,8 @@ const Contact = () => {
         >
           <div className="w-full rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl shadow-2xl relative overflow-hidden">
             {/* Subtle glow behind the form */}
-            <div className="absolute -top-24 -right-24 h-48 w-48 rounded-full bg-blue-500/20 blur-3xl pointer-events-none" />
-            <div className="absolute -bottom-24 -left-24 h-48 w-48 rounded-full bg-purple-500/20 blur-3xl pointer-events-none" />
+            <div className="absolute -top-24 -right-24 h-48 w-48 rounded-full bg-white/20 blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-24 -left-24 h-48 w-48 rounded-full bg-white/20 blur-3xl pointer-events-none" />
             
             <form 
               onSubmit={handleSubmit}
@@ -115,12 +115,12 @@ const Contact = () => {
               </button>
 
               {status === 'success' && (
-                <p className="text-green-400 text-sm text-center mt-2">
+                <p className="text-white text-sm text-center mt-2">
                   Message sent successfully!
                 </p>
               )}
               {status === 'error' && (
-                <p className="text-red-400 text-sm text-center mt-2">
+                <p className="text-white text-sm text-center mt-2">
                   Oops! Something went wrong. Please try again.
                 </p>
               )}

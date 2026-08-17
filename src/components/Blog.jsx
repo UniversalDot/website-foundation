@@ -27,7 +27,7 @@ const Blog = () => {
                 className={`apple-card group flex flex-col gap-6 p-6 sm:items-center md:p-8 relative overflow-hidden ${i % 2 !== 0 ? 'sm:flex-row-reverse' : 'sm:flex-row'}`}
               >
                 {/* Subtle glow behind the card */}
-                <div className="absolute -top-24 -right-24 h-48 w-48 rounded-full bg-blue-500/20 blur-3xl pointer-events-none" />
+                <div className="absolute -top-24 -right-24 h-48 w-48 rounded-full bg-white/20 blur-3xl pointer-events-none" />
 
                 {post.coverImage ? (
                   <img
