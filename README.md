@@ -1,8 +1,8 @@
 ## Local Development
 
-To make changes, we recommend using http-server which is a is a simple, zero-configuration command-line http server. 
+To make changes, use npm run dev.
 
-Read more about [http-server](https://www.npmjs.com/package/http-server).
+To build the project use npm run build.
 
 ## Deployment
 
@@ -18,9 +18,6 @@ https://universaldot.foundation
 ## Maintainers
 
 [@Igor Stojanov](https://github.com/JosephKnecht-lab)
-
-
-
 
 # React + Vite
 
