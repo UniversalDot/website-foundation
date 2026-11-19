@@ -6,7 +6,7 @@ Read more about [http-server](https://www.npmjs.com/package/http-server).
 
 ## Deployment
 
-The site is deployed manually  in Hostinger. 
+The site is deployed manually to Hostinger. 
 
 To deploy, run npm run build and then copy the contents of /dist into hostinger 
 
