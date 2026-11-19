@@ -5,7 +5,6 @@ import tripmaven from "../assets/TripMaven.png";
 import dealsonsoftware from "../assets/DealsonSoftware.png";
 import universalbitwallet from "../assets/universalbitwallet.png";
 import instantmemoir from "../assets/InstantMemoir.png";
-import itlinksme from "../assets/ItLinksme.png";
 import SectionHeader from "./SectionHeader";
 import projectsBackground from "../assets/image03.jpg";
 
@@ -32,18 +31,6 @@ const PROJECTS = [
   image: dealsonsoftware,
 
   url: "https://dealsonsoftware.com",
-},
-
-{
-  title: "ItLinks.me",
-
-  description:
-
-    "A digital platform designed to make sharing and organizing important links simple, accessible, and easy to manage from one central location.",
-
-  image: itlinksme,
-
-  url: "https://itlinks.me",
 },
 
 {
